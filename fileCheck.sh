@@ -6,18 +6,14 @@
 # perform md5 checks on files and compare to current. 
 # do this by soritng both lists and preforming diff.
 
-#Global settings
-workingDirectory=/etc/Lomnitor
-cacheDir=$workingDirectory/cache
-
 # File watcher variables
 # list of your essential config files
 fileList="files.conf" 
 
 # auto generated file of binaries on your system
-lastBinariesList="$cacheDir/binaries-last.lst"
-newBinariesList="$cacheDir/binaries-current.lst"
-appData="$cacheDir/appChk.data"
+lastBinariesList="$LOMcacheDir/binaries-last.lst"
+newBinariesList="$LOMcacheDir/binaries-current.lst"
+appData="$LOMcacheDir/appChk.data"
 
 if [[ ! -e $lastBinariesList ]]
 then

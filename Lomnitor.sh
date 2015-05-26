@@ -1,4 +1,7 @@
 # Linux monitoring app for scanning changes
+#Global settings
+export LOMworkingDirectory=/etc/Lomnitor
+export LOMcacheDir=$workingDirectory/cache
 
 # File checking
 ./fileCheck.sh
@@ -11,3 +14,4 @@
 
 # Log file scan for intrusion
 	# Checks ssh access, or other port access initiated
+./logScan.sh
